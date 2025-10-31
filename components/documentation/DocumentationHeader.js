@@ -18,7 +18,7 @@ export default function DocumentationHeader({ sidebarOpen, setSidebarOpen }) {
           
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 flex items-center justify-center">
-              <img src="/logo.png" alt="Logo" className="w-12 h-12" />
+              <img src="./logo.png" alt="Logo" className="w-12 h-12" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900">mlforgex</h1>
