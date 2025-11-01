@@ -1,6 +1,5 @@
 "use client"
 import React from "react";
-import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Menu, X, Download, ExternalLink, Github } from "lucide-react";
