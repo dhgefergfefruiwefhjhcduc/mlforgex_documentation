@@ -18,7 +18,7 @@ export default function HeroSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-4 md:mb-6">
+        <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-4 md:mb-8">
           <Badge className="bg-blue-100 text-blue-800 border-blue-200 text-xs md:text-sm">
             <TrendingUp className="w-3 h-3 mr-1" />
             End-to-End ML Automation
@@ -33,7 +33,13 @@ export default function HeroSection() {
           <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             mlforgex
           </span>
-        </h1>
+      </h1>
+          <div className="flex justify-center items-center gap-x-5 mb-3">
+          <a href="https://pepy.tech/projects/mlforgex"><img src="https://static.pepy.tech/personalized-badge/mlforgex?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads" alt="PyPI Downloads"></img></a>
+          <a href="https://pepy.tech/projects/mlforgex"><img src="https://img.shields.io/pypi/v/mlforgex.svg" alt="PyPI Downloads"></img></a>
+          <a href="https://pepy.tech/projects/mlforgex"><img src="https://img.shields.io/pypi/l/mlforgex.svg" alt="PyPI Downloads"></img></a>
+
+        </div>
 
         <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-3xl leading-relaxed">
           An <strong>end-to-end machine learning automation package</strong> for Python that allows you to{" "}

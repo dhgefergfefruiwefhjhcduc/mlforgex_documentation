@@ -1,10 +1,13 @@
 "use client"
 import React from "react";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Menu, X, Download, ExternalLink, Github } from "lucide-react";
 
 export default function DocumentationHeader({ sidebarOpen, setSidebarOpen }) {
+  const router = useRouter();
+
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       <div className="flex items-center justify-between px-6 py-2">
@@ -18,7 +21,7 @@ export default function DocumentationHeader({ sidebarOpen, setSidebarOpen }) {
           
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 flex items-center justify-center">
-              <img src="./logo.png" alt="Logo" className="w-12 h-12" />
+              <img src="./logo.png" alt="Logo" onClick={() => router.push('/')} className="cursor-pointer w-12 h-12" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900">mlforgex</h1>
@@ -29,9 +32,6 @@ export default function DocumentationHeader({ sidebarOpen, setSidebarOpen }) {
 
         <div className="flex items-center gap-3">
           <div className="hidden sm:flex items-center gap-2">
-            <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200">
-              v1.0.0
-            </Badge>
             <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
               Python 3.8+
             </Badge>

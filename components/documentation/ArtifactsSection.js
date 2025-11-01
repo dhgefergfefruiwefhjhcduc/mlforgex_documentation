@@ -30,9 +30,9 @@ export default function ArtifactsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-6">
+        <div className="grid grid-cols-1  gap-4 md:gap-6">
           {/* File Structure */}
-          <Card>
+          <Card className="w-full">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-lg md:text-xl">
                 <FolderOpen className="w-5 h-5 text-blue-600" />
@@ -72,11 +72,25 @@ export default function ArtifactsSection() {
                   </div>
                 </div>
               </div>
+            <div className="mt-4 flex gap-2 md:gap-3">
+              <Badge className="bg-blue-100 text-blue-800 justify-center text-xs md:text-sm py-2">
+                Performance Metrics
+              </Badge>
+              <Badge className="bg-green-100 text-green-800 justify-center text-xs md:text-sm py-2">
+                Feature Information
+              </Badge>
+              <Badge className="bg-purple-100 text-purple-800 justify-center text-xs md:text-sm py-2">
+                Model Configuration
+              </Badge>
+              <Badge className="bg-orange-100 text-orange-800 justify-center text-xs md:text-sm py-2">
+                Training Parameters
+              </Badge>
+            </div>
             </CardContent>
           </Card>
 
           {/* Metrics Example */}
-          <Card>
+          {/* <Card> */}
             {/* <CardHeader> */}
               {/* <CardTitle className="flex items-center gap-2 text-lg md:text-xl">
                 <FileText className="w-5 h-5 text-green-600" />
@@ -84,29 +98,15 @@ export default function ArtifactsSection() {
               </CardTitle> */}
               {/* <p className="text-gray-600 text-sm md:text-base">Sample metrics file with performance details:</p> */}
             {/* </CardHeader> */}
-            <CardContent>
+            {/* <CardContent> */}
               {/* <div className="bg-gray-900 rounded-lg p-3 md:p-6 overflow-x-auto">
                 <pre className="text-gray-300 text-xs leading-relaxed whitespace-pre">
                   <code>{metricsExample}</code>
                 </pre>
               </div> */}
               
-              <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-3">
-                <Badge className="bg-blue-100 text-blue-800 justify-center text-xs md:text-sm py-2">
-                  Performance Metrics
-                </Badge>
-                <Badge className="bg-green-100 text-green-800 justify-center text-xs md:text-sm py-2">
-                  Feature Information
-                </Badge>
-                <Badge className="bg-purple-100 text-purple-800 justify-center text-xs md:text-sm py-2">
-                  Model Configuration
-                </Badge>
-                <Badge className="bg-orange-100 text-orange-800 justify-center text-xs md:text-sm py-2">
-                  Training Parameters
-                </Badge>
-              </div>
-            </CardContent>
-          </Card>
+            {/* </CardContent> */}
+          {/* </Card> */}
         </div>
 
         {/* Visualization Types */}
