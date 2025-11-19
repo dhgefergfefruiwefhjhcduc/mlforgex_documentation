@@ -68,7 +68,7 @@ export default function HeroSection() {
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl md:rounded-2xl p-6 md:p-8">
+        <div  className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl md:rounded-2xl p-6 md:p-8">
           <div className="text-center">
             <div className="w-10 h-10 md:w-12 md:h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-2 md:mb-3">
               <Users className="w-5 h-5 md:w-6 md:h-6 text-blue-600" />

@@ -66,7 +66,7 @@ export default function LicenseSection() {
               <div className="space-y-6">
                 <div>
                   <h3 className="font-semibold text-gray-900 text-lg">Priyanshu Mathur</h3>
-                  <p className="text-gray-600">Machine Learning Engineer & Open Source Developer</p>
+                  <p className="text-gray-600">Machine Learning Enthusiast & Developer</p>
                 </div>
                 
                 <div className="space-y-3">

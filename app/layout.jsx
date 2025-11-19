@@ -17,6 +17,10 @@ export const metadata = {
   keywords: "machine learning, automation, Python package, mlforgex, data preprocessing, model selection, classification, regression, NLP, hyperparameter tuning",
   viewport: "width=device-width, initial-scale=1",
   themeColor: "#000000",
+  icons: {
+  icon: "/mlforgex_documentation/favicon.ico",
+}
+
 };
 
 export default function RootLayout({ children }) {
