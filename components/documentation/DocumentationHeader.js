@@ -5,8 +5,6 @@ import { Badge } from "@/components/ui/badge";
 import { Menu, X, Download, ExternalLink, Github } from "lucide-react";
 
 export default function DocumentationHeader({ sidebarOpen, setSidebarOpen }) {
-  const router = useRouter();
-
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       <div className="flex items-center justify-between px-6 py-2">
