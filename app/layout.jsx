@@ -22,6 +22,10 @@ export const metadata = {
   icons: {
     icon: "/mlforgex_documentation/favicon.ico",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 export default function RootLayout({ children }) {
   return (
