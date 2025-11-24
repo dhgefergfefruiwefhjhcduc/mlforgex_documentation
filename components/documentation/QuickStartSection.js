@@ -111,6 +111,7 @@ print(preds[:10])`;
                     variant="outline"
                     size="sm"
                     onClick={() => copyCode(cliCode, 'cli')}
+                    aria-label="Copy CLI code to clipboard"
                     className="cursor-pointer "
                   >
                     {copiedCode === 'cli' ? (

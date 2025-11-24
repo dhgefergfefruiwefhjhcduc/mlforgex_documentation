@@ -1,5 +1,5 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,12 +13,9 @@ const geistMono = Geist_Mono({
 
 export const themeColor = "#000000";
 export const metadata = {
-  title:
-    "mlforgex - End-to-End Machine Learning Automation Package | Documentation",
-  description:
-    "mlforgex is a Python package for automated machine learning with support for Classification, Regression and NLP. Features include data preprocessing, model selection, hyperparameter tuning, and interactive dashboards.",
-  keywords:
-    "machine learning, automation, Python package, mlforgex, data preprocessing, model selection, classification, regression, NLP, hyperparameter tuning",
+  title: "Automated Machine Learning for Python | mlforgex Package | Documentation",
+  description: "mlforgex automates data science with Python. Quickly build, tune, and visualize machine learning models for classification, regression, and NLP—all in one toolkit.",
+ keywords: "automated machine learning, Python, mlforgex, data science, model tuning, NLP, classification, regression, dashboards",
   icons: {
     icon: "/mlforgex_documentation/favicon.ico",
   },

@@ -1,26 +1,6 @@
 
 "use client"
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { 
-  BookOpen, 
-  Download, 
-  Code, 
-  Play, 
-  Terminal,
-  FileText,
-  Settings,
-  Zap,
-  Shield,
-  BarChart3,
-  ChevronRight,
-  ExternalLink,
-  Copy,
-  Check,
-  Menu,
-  X
-} from "lucide-react";
-
 import DocumentationHeader from "../components/documentation/DocumentationHeader";
 import NavigationSidebar from "../components/documentation/NavigationSidebar";
 import HeroSection from "../components/documentation/HeroSection";

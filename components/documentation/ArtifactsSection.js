@@ -88,25 +88,6 @@ export default function ArtifactsSection() {
             </div>
             </CardContent>
           </Card>
-
-          {/* Metrics Example */}
-          {/* <Card> */}
-            {/* <CardHeader> */}
-              {/* <CardTitle className="flex items-center gap-2 text-lg md:text-xl">
-                <FileText className="w-5 h-5 text-green-600" />
-                metrics.txt Example
-              </CardTitle> */}
-              {/* <p className="text-gray-600 text-sm md:text-base">Sample metrics file with performance details:</p> */}
-            {/* </CardHeader> */}
-            {/* <CardContent> */}
-              {/* <div className="bg-gray-900 rounded-lg p-3 md:p-6 overflow-x-auto">
-                <pre className="text-gray-300 text-xs leading-relaxed whitespace-pre">
-                  <code>{metricsExample}</code>
-                </pre>
-              </div> */}
-              
-            {/* </CardContent> */}
-          {/* </Card> */}
         </div>
 
         {/* Visualization Types */}

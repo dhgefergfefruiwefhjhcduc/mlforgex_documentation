@@ -40,13 +40,11 @@ export default function HeroSection() {
           <a href="https://pepy.tech/projects/mlforgex"><img src="https://img.shields.io/pypi/l/mlforgex.svg" alt="PyPI Downloads"></img></a>
 
         </div>
-
         <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-3xl leading-relaxed">
-          An <strong>end-to-end machine learning automation package</strong> for Python that allows you to{" "}
-          <strong>train, evaluate, and make predictions</strong> with minimal effort — handling{" "}
-          <strong>data preprocessing</strong>, <strong>model selection</strong>,{" "}
-          <strong>hyperparameter tuning</strong>, and <strong>artifact generation</strong> automatically.
-        </p>
+  <strong>mlforgex</strong> is a cutting-edge <strong>automated machine learning Python package</strong> designed to <strong>train, evaluate, and make predictions</strong> rapidly. Tackle <strong>classification, regression, and NLP tasks</strong> using robust <strong>data preprocessing</strong>, one-click <strong>model selection</strong>, seamless <strong>hyperparameter tuning</strong>, and streamlined <strong>artifact generation</strong>—all handled for you.<br/><br/>
+  Accelerate your data science workflow with <strong>end-to-end automation</strong> for every stage of machine learning.
+</p>
+
 
         <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 md:mb-8">
           <Button 

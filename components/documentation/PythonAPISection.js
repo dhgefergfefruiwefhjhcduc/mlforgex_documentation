@@ -84,6 +84,7 @@ predictions.to_csv("predictions.csv", index=False)`;
                   size="sm"
                   onClick={() => copyCode(trainCode, 'train')}
                   className="cursor-pointer "
+                  aria-label="Copy train_model code to clipboard"
                 >
                   {copiedCode === 'train' ? (
                     <Check className="w-4 h-4" />
@@ -139,6 +140,7 @@ predictions.to_csv("predictions.csv", index=False)`;
                   size="sm"
                   onClick={() => copyCode(predictCode, 'predict')}
                   className="cursor-pointer "
+                  aria-label="Copy predict code to clipboard"
                 >
                   {copiedCode === 'predict' ? (
                     <Check className="w-4 h-4" />

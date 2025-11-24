@@ -12,13 +12,14 @@ export default function DocumentationHeader({ sidebarOpen, setSidebarOpen }) {
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}
             className="cursor-pointer lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
+             aria-label={sidebarOpen ? "Close sidebar" : "Open sidebar"}
           >
             {sidebarOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
           
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 flex items-center justify-center">
-              <img src="./logo.png" alt="Logo" className="w-12 h-12" />
+              <img src="./logo.avif" alt="Logo" className="w-12 h-12" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900">mlforgex</h1>

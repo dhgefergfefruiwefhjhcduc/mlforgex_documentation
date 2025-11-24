@@ -153,6 +153,7 @@ export default function ExamplesSection() {
                       size="sm"
                       onClick={() => copyCode(example.code, index)}
                       className="cursor-pointer self-start"
+                      aria-label="Copy example code to clipboard"
                     >
                       {copiedCode === index ? (
                         <Check className="w-4 h-4" />

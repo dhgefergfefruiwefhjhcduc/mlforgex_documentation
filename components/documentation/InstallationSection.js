@@ -55,6 +55,7 @@ export default function InstallationSection() {
                     size="sm"
                     onClick={copyInstallCommand}
                     className="cursor-pointer text-gray-400 hover:text-white"
+                    aria-label="Copy installation command to clipboard"
                   >
                     {copied ? (
                       <Check className="w-4 h-4" />
