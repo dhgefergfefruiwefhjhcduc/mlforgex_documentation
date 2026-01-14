@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { 
   BookOpen, 
   Zap, 
@@ -11,11 +10,14 @@ import {
   BarChart3,
   TestTube,
   Shield,
-  X
+  Brain,
+  
 } from "lucide-react";
 
 const navigationItems = [
   { id: 'overview', title: 'Overview', icon: BookOpen },
+  { id: 'automl', title: 'What is AutoML?', icon: Brain },
+  { id: 'whats-new', title: 'What\'s New', icon: BookOpen },
   { id: 'quickstart', title: 'Quick Start', icon: Zap },
   { id: 'installation', title: 'Installation', icon: Download },
   { id: 'features', title: 'Features', icon: Settings },
@@ -25,6 +27,7 @@ const navigationItems = [
   { id: 'artifacts', title: 'Artifacts & Outputs', icon: BarChart3 },
   { id: 'how-it-works', title: 'How It Works', icon: Settings },
   { id: 'testing', title: 'Testing', icon: TestTube },
+  { id: 'mlforgex', title: 'Why mlforgex?', icon: Zap },
   { id: 'license', title: 'License', icon: Shield }
 ];
 

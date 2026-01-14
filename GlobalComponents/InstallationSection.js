@@ -1,8 +1,8 @@
 "use client"
 import React, { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Button } from "./ui/button";
+import { Badge } from "./ui/badge";
 import { Download, Copy, Check, Package, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -54,7 +54,7 @@ export default function InstallationSection() {
                     variant="ghost"
                     size="sm"
                     onClick={copyInstallCommand}
-                    className="cursor-pointer text-gray-400 hover:text-white"
+                    className="cursor-pointer text-gray-400 hover:text-black"
                     aria-label="Copy installation command to clipboard"
                   >
                     {copied ? (

@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
 import { Download, ExternalLink, Star, Users, TrendingUp, ChevronDown,Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <section id="overview" className="py-8 md:py-12">
       <motion.div
-      className="flex justify-between items-center flex-col"
+      className="flex justify-between items-center flex-col gap-y-[10px]"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -31,16 +31,17 @@ export default function HeroSection() {
 
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 tracking-tight">
           <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-            mlforgex
+            mlforgex Documentation
           </span>
       </h1>
           <div className="flex justify-center items-center gap-x-5 mb-3">
-          <a href="https://pepy.tech/projects/mlforgex"><img src="https://static.pepy.tech/personalized-badge/mlforgex?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads" alt="PyPI Downloads"></img></a>
-          <a href="https://pepy.tech/projects/mlforgex"><img src="https://img.shields.io/pypi/v/mlforgex.svg" alt="PyPI Downloads"></img></a>
-          <a href="https://pepy.tech/projects/mlforgex"><img src="https://img.shields.io/pypi/l/mlforgex.svg" alt="PyPI Downloads"></img></a>
+          <a href="https://pepy.tech/projects/mlforgex" target="_blank"><img src="https://static.pepy.tech/personalized-badge/mlforgex?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads" alt="PyPI Downloads"></img></a>
+          <a href="https://pepy.tech/projects/mlforgex" target="_blank"><img src="https://img.shields.io/pypi/v/mlforgex.svg" alt="PyPI Downloads"></img></a>
+          <a href="https://pepy.tech/projects/mlforgex" target="_blank"><img src="https://img.shields.io/pypi/l/mlforgex.svg" alt="PyPI Downloads"></img></a>
+          <a href="https://github.com/josephmisiti/awesome-machine-learning" target="_blank"><img src="https://awesome.re/badge.svg" alt="Listed in Awesome Machine Learning"></img></a>
 
         </div>
-        <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-3xl leading-relaxed">
+        <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-5xl leading-relaxed">
   <strong>mlforgex</strong> is a cutting-edge <strong>automated machine learning Python package</strong> designed to <strong>train, evaluate, and make predictions</strong> rapidly. Tackle <strong>classification, regression, and NLP tasks</strong> using robust <strong>data preprocessing</strong>, one-click <strong>model selection</strong>, seamless <strong>hyperparameter tuning</strong>, and streamlined <strong>artifact generation</strong>—all handled for you.<br/><br/>
   Accelerate your data science workflow with <strong>end-to-end automation</strong> for every stage of machine learning.
 </p>

@@ -1,14 +1,14 @@
 "use client"
 import React, { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "../../../../GlobalComponents/ui/card";
+import { Button } from "../../../../GlobalComponents/ui/button";
 import { Code, Copy, Check } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function PythonAPISection() {
   const [copiedCode, setCopiedCode] = useState(null);
 
-  const trainCode = `from mlforgex import train_model
+  const trainCode = `from mlforge import train_model
 
 # Train a model with all options
 train_model(
@@ -32,7 +32,7 @@ train_model(
     fast=True  # Skip tuning for faster results
 )`;
 
-  const predictCode = `from mlforgex import predict
+  const predictCode = `from mlforge import predict
 
 # Make predictions on new data
 predictions = predict(

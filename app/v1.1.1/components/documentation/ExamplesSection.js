@@ -1,9 +1,9 @@
 "use client"
 import React, { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { FileText, Copy, Check, Terminal, Code } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "../../../../GlobalComponents/ui/card";
+import { Badge } from "../../../../GlobalComponents/ui/badge";
+import { Button } from "../../../../GlobalComponents/ui/button";
+import { Copy, Check, Terminal, Code } from "lucide-react";
 import { motion } from "framer-motion";
 
 const examples = [
@@ -13,7 +13,7 @@ const examples = [
     type: "CLI",
     icon: Terminal,
     code: `# Train on housing data
-mlforge-train \\
+mlforgex-train \\
   --data_path housing.csv \\
   --dependent_feature SalePrice \\
   --cv 5 \\
@@ -22,9 +22,8 @@ mlforge-train \\
   --dashboard_title Housing Price Prediction
 
 # Make predictions
-mlforge-predict \\
+mlforgex-predict \\
   --model_path housing_artifacts/model.pkl \\
-  --preprocessor_path housing_artifacts/preprocessor.pkl \\
   --input_data new_houses.csv`,
     badge: "Regression"
   },
@@ -49,9 +48,7 @@ train_model(
 # Predict on new customers
 predictions = predict(
     model_path="churn_model/model.pkl",
-    preprocessor_path="churn_model/preprocessor.pkl",
     input_data_path="new_customers.csv",
-    encoder_path="churn_model/encoder.pkl"
 )
 
 print(f"Predicted churners: {sum(predictions)}")`,
@@ -63,7 +60,7 @@ print(f"Predicted churners: {sum(predictions)}")`,
     type: "CLI",
     icon: Terminal,
     code: `# Fast training without hyperparameter tuning
-mlforge-train \\
+mlforgex-train \\
   --data_path experiment_data.csv \\
   --dependent_feature target \\
   --fast \\
@@ -95,9 +92,7 @@ train_model(
 # Classify new images
 results = predict(
     model_path="image_classifier/model.pkl",
-    preprocessor_path="image_classifier/preprocessor.pkl", 
     input_data_path="new_image_features.csv",
-    encoder_path="image_classifier/encoder.pkl"
 )`,
     badge: "Multi-class"
   }

@@ -1,9 +1,9 @@
 "use client"
 import React, { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Card, CardContent, CardHeader, CardTitle } from "../../../../GlobalComponents/ui/card";
+import { Badge } from "../../../../GlobalComponents/ui/badge";
+import { Button } from "../../../../GlobalComponents/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../../../GlobalComponents/ui/tabs";
 import { Terminal, Code, Copy, Check } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -17,7 +17,7 @@ export default function QuickStartSection() {
   };
 
   const cliCode = `# Train a model
-mlforge-train \\
+mlforgex-train \\
   --data_path path/to/data.csv \\
   --dependent_feature TargetColumn \\
   --rmse_prob 0.3 \\
@@ -28,17 +28,15 @@ mlforge-train \\
   --artifacts_dir artifacts \\
   --dashboard_title "My Model"  # Title for the dashboard
   # add --fast to speed up the run
-  # add --nlp to enable NLP mode
+  # add --nlp to active NLP mode
 
 # Make predictions
-mlforge-predict \\
+mlforgex-predict \\
   --model_path artifacts/model.pkl \\
-  --preprocessor_path artifacts/preprocessor.pkl \\
   --input_data path/to/new_data.csv \\
-  --encoder_path artifacts/encoder.pkl \\
   # add --no-predicted_data to disable saving predicted data \\
   # add --nlp to enable NLP mode \\`;
-  const pythonCode = `from mlforgex import train_model, predict
+  const pythonCode = `from mlforge import train_model, predict
 
 # Train a model
 train_model(
@@ -58,9 +56,7 @@ train_model(
 # Make predictions
 preds = predict(
     model_path="artifacts/model.pkl",
-    preprocessor_path="artifacts/preprocessor.pkl",
     input_data_path="new_data.csv",
-    encoder_path="artifacts/encoder.pkl"  # optional
     nlp=False  # set True to enable NLP mode
 )
 print(preds[:10])`;

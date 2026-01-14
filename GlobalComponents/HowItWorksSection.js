@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "./ui/card";
+import { Badge } from "./ui/badge";
 import { 
   FileText, 
   Target, 
@@ -115,7 +115,7 @@ export default function HowItWorksSection() {
         </div>
 
         {/* Pipeline Flow */}
-        <div className="mt-12 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8">
+        {/* <div className="mt-12 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8">
           <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">End-to-End Automation</h3>
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
             <Badge className="bg-white text-gray-700 px-4 py-2">Raw CSV Data</Badge>
@@ -132,6 +132,42 @@ export default function HowItWorksSection() {
             From raw data to production-ready model in one command
           </p>
         </div>
+      </motion.div>
+    </section>
+  );
+} */}
+<div className="mt-12 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">End-to-End Automation</h3>
+          <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
+            <Badge className="bg-white text-gray-700 px-4 py-2">Raw CSV Data</Badge>
+            <ChevronRight className="w-4 h-4 text-gray-400" />
+            <Badge className="bg-blue-100 text-blue-800 px-4 py-2">Auto Preprocessing</Badge>
+            <ChevronRight className="w-4 h-4 text-gray-400" />
+            <Badge className="bg-green-100 text-green-800 px-4 py-2">Model Training</Badge>
+            <ChevronRight className="w-4 h-4 text-gray-400" />
+            <Badge className="bg-purple-100 text-purple-800 px-4 py-2">Best Model</Badge>
+            <ChevronRight className="w-4 h-4 text-gray-400" />
+            <Badge className="bg-orange-100 text-orange-800 px-4 py-2">Production Ready</Badge>
+          </div>
+          <p className="text-center text-gray-600 mt-4">
+            From raw data to production-ready model in one command
+          </p>
+        </div>
+
+        {/* YouTube embed */}
+        {/* <div className="mt-8">
+          <h4 className="text-xl font-semibold mb-3 text-gray-900 text-center">Watch: mlforgex Overview</h4>
+          <div className="mx-auto max-w-4xl rounded-lg overflow-hidden shadow-sm" style={{ position: "relative", paddingTop: "56.25%" }}>
+            <iframe
+              src={`https://www.youtube-nocookie.com/embed/EY4eqjdrEew`}
+              title="mlforgex overview"
+              style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              loading="lazy"
+            />
+          </div>
+        </div> */}
       </motion.div>
     </section>
   );

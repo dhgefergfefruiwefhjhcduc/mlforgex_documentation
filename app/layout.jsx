@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const themeColor = "#000000";
 export const metadata = {
-  title: "Automated Machine Learning for Python | mlforgex Package | Documentation",
+  title: " mlforgex Documentation | Automated Machine Learning for Python",
   description: "mlforgex automates data science with Python. Quickly build, tune, and visualize machine learning models for classification, regression, and NLP—all in one toolkit.",
  keywords: "automated machine learning, Python, mlforgex, data science, model tuning, NLP, classification, regression, dashboards",
   icons: {

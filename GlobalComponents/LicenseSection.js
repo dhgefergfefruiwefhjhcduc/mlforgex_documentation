@@ -1,8 +1,8 @@
 import React from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Shield, ExternalLink, Mail, User, Globe } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Button } from "./ui/button";
+import { Badge } from "./ui/badge";
+import { Shield, ExternalLink, Mail, User, Globe,Github } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function LicenseSection() {
@@ -117,17 +117,23 @@ export default function LicenseSection() {
               Install mlforgex now and transform your machine learning workflow with intelligent automation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="cursor-pointer bg-blue-600 hover:bg-blue-700">
-                pip install mlforgex
-              </Button>
               <Button 
                 variant="outline" 
                 size="lg"
                 onClick={() => window.open('https://pypi.org/project/mlforgex/', '_blank')}
-                className="cursor-pointer"
+                className="cursor-pointer bg-black text-white hover:bg-gray-600 hover:text-white"
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
                 View on PyPI
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg"
+                onClick={() => window.open('https://github.com/dhgefergfefruiwefhjhcduc/ML_Forgex', '_blank')}
+                className="cursor-pointer bg-black text-white hover:bg-gray-600 hover:text-white"
+              >
+                <Github className="w-4 h-4 mr-2" />
+                Open Source
               </Button>
             </div>
           </CardContent>

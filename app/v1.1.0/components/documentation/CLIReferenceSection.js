@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "../../../../GlobalComponents/ui/card";
+import { Badge } from "../../../../GlobalComponents/ui/badge";
 import { Terminal, Play } from "lucide-react";
 import { motion } from "framer-motion";
 

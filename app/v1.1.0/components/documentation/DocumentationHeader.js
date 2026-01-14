@@ -1,8 +1,9 @@
 "use client"
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Menu, X, Download, ExternalLink, Github } from "lucide-react";
+import { Button } from "../../../../GlobalComponents/ui/button";
+import { Badge } from "../../../../GlobalComponents/ui/badge";
+import { Menu, X, ExternalLink, Github } from "lucide-react";
+import VersionSelector from "@/VersionSelector";
 
 export default function DocumentationHeader({ sidebarOpen, setSidebarOpen }) {
   return (
@@ -33,6 +34,9 @@ export default function DocumentationHeader({ sidebarOpen, setSidebarOpen }) {
             <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200">
               Python 3.8+
             </Badge>
+          </div>
+          <div className="hidden sm:flex items-center">
+            <VersionSelector />
           </div>
           
           <Button

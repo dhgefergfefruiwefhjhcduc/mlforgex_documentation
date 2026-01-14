@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "../../../../GlobalComponents/ui/card";
+import { Badge } from "../../../../GlobalComponents/ui/badge";
 import { FileText, FolderOpen, BarChart3, Image } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -72,7 +72,7 @@ export default function ArtifactsSection() {
                   </div>
                 </div>
               </div>
-            <div className="mt-4 flex gap-2 md:gap-3">
+            <div className="mt-4 w-full justify-center flex-wrap flex gap-2 md:gap-3">
               <Badge className="bg-blue-100 text-blue-800 justify-center text-xs md:text-sm py-2">
                 Performance Metrics
               </Badge>
